@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import NewsletterForm from "@/components/NewsletterForm";
 import MediaGallery from "@/components/MediaGallery";
 import { mediaItems } from "@/content/media";
@@ -325,7 +324,7 @@ export default function Home() {
                 She knows first-hand how stressful it can be to put yourself on the line every day to make the world a better place — today and for future generations. For April, and many of our most dedicated leaders, business is personal. It requires vulnerability, courage and the willingness to be all of you.
               </p>
               <p className="mt-4 text-sm md:text-base text-soft-gray max-w-prose">
-                This is also what's required for you to show up as all of you. April is passionate about supporting leaders beyond the boardroom throughout every phase of their career, whether you are currently serving in an executive capacity, are an aspiring executive, or are in transition.
+                This is also what&apos;s required for you to show up as all of you. April is passionate about supporting leaders beyond the boardroom throughout every phase of their career, whether you are currently serving in an executive capacity, are an aspiring executive, or are in transition.
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <button type="button" className="btn-gold text-sm">Executive Coaching</button>

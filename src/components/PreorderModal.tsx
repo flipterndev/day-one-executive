@@ -64,7 +64,7 @@ export default function PreorderButton({ variant = "hero", className = "" }: Pro
             ✕
           </button>
         </div>
-        <p className="mt-2 text-sm text-black/70">You'll be redirected to complete your order.</p>
+        <p className="mt-2 text-sm text-black/70">You&apos;ll be redirected to complete your order.</p>
 
         <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
           <a
