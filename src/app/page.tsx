@@ -51,56 +51,65 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className="relative overflow-hidden">
-          <div className="mx-auto max-w-6xl px-6 py-20 md:py-28 grid md:grid-cols-2 items-center gap-12">
-            <div>
-              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.06] px-3 py-1">
-                <span className="flex items-center gap-0.5" aria-hidden style={{ color: "var(--gold-start)" }}>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
-                </span>
-                <span className="text-xs text-soft-gray">Rated by Top Executives!</span>
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gold-gradient">Lead with impact from day one</h1>
-              <p className="mt-4 text-base md:text-lg text-soft-gray max-w-prose">
-                Proven strategies to deliver impact, inspire others, and sustain success from the very start.
-              </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                <PreorderButton variant="hero" />
-                <a href="https://read.amazon.com/sample/B0BYW6DVTQ?clientId=share" target="_blank" rel="noopener noreferrer" className="btn-ghost">
-                  Preview
-                </a>
-              </div>
-              <p className="mt-4 text-xs text-soft-gray">Available in hardcover, ebook, and audiobook</p>
-              <div className="mt-4 flex items-center gap-4">
-        <Image
-                  src="https://www.thebookfest.com/wp-content/uploads/2022/03/The-BookFest-First-Place-Book-Award.png"
-                  alt="The BookFest First Place Book Award"
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
-            <Image
-                  src="https://literarytitan.com/wp-content/uploads/2020/06/literary-titan-gold-book-award-icon.png"
-                  alt="Literary Titan Gold Book Award"
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
-                <Image
-                  src="https://goodybusinessbookawards.com/wp-content/uploads/2021/12/goody-business-book-awards-logo-winner-rgb-1.png"
-                  alt="Goody Business Book Awards Winner"
-                  width={120}
-                  height={120}
-                  className="object-contain"
-                />
+          <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+            {/* Book cover - shown above content on mobile, right side on desktop */}
+            <div className="relative mb-8 md:hidden">
+              <div className="relative mx-auto h-[420px] w-[300px]">
+                <Image src="https://m.media-amazon.com/images/I/71r8X3TjpYL._SY522_.jpg" alt="Day One Executive book cover" fill priority className="rounded-md shadow-2xl object-cover" style={{ filter: "drop-shadow(0 0 24px rgba(221, 190, 112, 0.45))" }} />
               </div>
             </div>
-            <div className="relative">
-              <div className="relative mx-auto h-[420px] w-[300px] md:h-[520px] md:w-[360px]">
-                <Image src="https://m.media-amazon.com/images/I/71r8X3TjpYL._SY522_.jpg" alt="Day One Executive book cover" fill priority className="rounded-md shadow-2xl object-cover" style={{ filter: "drop-shadow(0 0 24px rgba(221, 190, 112, 0.45))" }} />
+            
+            <div className="grid md:grid-cols-2 items-center gap-12">
+              <div>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.06] px-3 py-1">
+                  <span className="flex items-center gap-0.5" aria-hidden style={{ color: "var(--gold-start)" }}>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </span>
+                  <span className="text-xs text-soft-gray">Rated by Top Executives!</span>
+                </div>
+                <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gold-gradient">Lead with impact from day one</h1>
+                <p className="mt-4 text-base md:text-lg text-soft-gray max-w-prose">
+                  Proven strategies to deliver impact, inspire others, and sustain success from the very start.
+                </p>
+                <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                  <PreorderButton variant="hero" />
+                  <a href="https://read.amazon.com/sample/B0BYW6DVTQ?clientId=share" target="_blank" rel="noopener noreferrer" className="btn-ghost">
+                    Preview
+                  </a>
+                </div>
+                <p className="mt-4 text-xs text-soft-gray">Available in hardcover, ebook, and audiobook</p>
+                <div className="mt-4 flex items-center gap-4">
+          <Image
+                    src="https://www.thebookfest.com/wp-content/uploads/2022/03/The-BookFest-First-Place-Book-Award.png"
+                    alt="The BookFest First Place Book Award"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+              <Image
+                    src="https://literarytitan.com/wp-content/uploads/2020/06/literary-titan-gold-book-award-icon.png"
+                    alt="Literary Titan Gold Book Award"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+                  <Image
+                    src="https://goodybusinessbookawards.com/wp-content/uploads/2021/12/goody-business-book-awards-logo-winner-rgb-1.png"
+                    alt="Goody Business Book Awards Winner"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+              <div className="relative hidden md:block">
+                <div className="relative mx-auto h-[520px] w-[360px]">
+                  <Image src="https://m.media-amazon.com/images/I/71r8X3TjpYL._SY522_.jpg" alt="Day One Executive book cover" fill priority className="rounded-md shadow-2xl object-cover" style={{ filter: "drop-shadow(0 0 24px rgba(221, 190, 112, 0.45))" }} />
+                </div>
               </div>
             </div>
           </div>
