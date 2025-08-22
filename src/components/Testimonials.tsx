@@ -36,7 +36,7 @@ export default function Testimonials({ items }: Props) {
             <span aria-hidden className="inline-block align-top mr-2" style={{ color: "var(--gold-start)" }}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="md:w-5 md:h-5"><path d="M7.17 6A5 5 0 0 0 2 11v7h7v-7H6.83A3 3 0 0 1 9 8.17V6H7.17Zm9 0A5 5 0 0 0 11 11v7h7v-7h-2.17A3 3 0 0 1 18 8.17V6h-1.83Z"/></svg>
             </span>
-            "{featured.quote}"
+            &ldquo;{featured.quote}&rdquo;
           </blockquote>
         </div>
         <figcaption className="mt-4 flex flex-col items-start gap-1 text-xs md:text-sm text-soft-gray relative z-10">
@@ -77,7 +77,7 @@ export default function Testimonials({ items }: Props) {
                 <span aria-hidden className="inline-block align-top mr-2" style={{ color: "var(--gold-start)" }}>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7.17 6A5 5 0 0 0 2 11v7h7v-7H6.83A3 3 0 0 1 9 8.17V6H7.17Zm9 0A5 5 0 0 0 11 11v7h7v-7h-2.17A3 3 0 0 1 18 8.17V6h-1.83Z"/></svg>
                 </span>
-                "{t.quote}"
+                &ldquo;{t.quote}&rdquo;
               </blockquote>
             </div>
             <figcaption className="mt-4 flex flex-col items-start gap-1 text-xs text-soft-gray relative z-10">
