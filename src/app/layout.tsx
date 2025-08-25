@@ -61,6 +61,19 @@ export default function RootLayout({
         <link rel="icon" href="/logos/key.png?v=1" sizes="any" />
         <link rel="icon" type="image/png" href="/logos/key.png?v=1" />
         <link rel="apple-touch-icon" href="/logos/key.png?v=1" />
+        {/* MailerLite Universal */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+              .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+              n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+              (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+              ml('account', '1752283');
+            `,
+          }}
+        />
+        {/* End MailerLite Universal */}
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}

@@ -1,11 +1,11 @@
 import Image from "next/image";
-import NewsletterForm from "@/components/NewsletterForm";
 import MediaGallery from "@/components/MediaGallery";
 import { mediaItems } from "@/content/media";
 import FeaturedIn from "@/components/FeaturedIn";
 import PreorderButton from "@/components/PreorderModal";
 import Testimonials from "@/components/Testimonials";
 import { testimonials } from "@/content/testimonials";
+import MailerLiteForm from "@/components/MailerLiteForm";
 
 export default function Home() {
   return (
@@ -420,14 +420,14 @@ export default function Home() {
         {/* CTA */}
         <section id="cta" className="border-t border-white/10">
           <div className="mx-auto max-w-3xl px-6 py-16 md:py-24 text-center">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gold-gradient">Get launch updates and a sample chapter</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-gold-gradient">Lead with impact beyond the book</h2>
             <p className="mt-3 text-sm md:text-base text-soft-gray">
-              Join the list and receive a preview on release.
+              Subscribe for actionable leadership strategies, event news, and resources to help you thrive from Day One.
             </p>
             <div className="mt-8 max-w-xl mx-auto">
-              <NewsletterForm />
+              <MailerLiteForm />
             </div>
-        </div>
+          </div>
         </section>
       </main>
 
