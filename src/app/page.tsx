@@ -493,7 +493,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <blockquote className="text-xl md:text-2xl text-foreground leading-relaxed italic">
-                      "Even in this age of AI, successful organizations will engineer the 'people' side of success as much as the technical and business aspects. They will not leave it to chance."
+                      &ldquo;Even in this age of AI, successful organizations will engineer the &apos;people&apos; side of success as much as the technical and business aspects. They will not leave it to chance.&rdquo;
                     </blockquote>
                   </div>
                   <div className="flex items-center justify-between">

@@ -78,7 +78,7 @@ export default function LandingPopup({ isOpen, onClose }: LandingPopupProps) {
               designed to accelerate your success.
             </p>
             <p className="text-base">
-              From Fortune 500 companies to government agencies, leaders trust April's proven 
+              From Fortune 500 companies to government agencies, leaders trust April&apos;s proven 
               Day One Executive framework to deliver immediate impact.
             </p>
           </div>

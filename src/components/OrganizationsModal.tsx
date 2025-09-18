@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 interface OrganizationsModalProps {
@@ -98,7 +96,7 @@ export default function OrganizationsModal({ isOpen, onClose }: OrganizationsMod
               </div>
               
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-                Great Organizations Don't Run on <span className="text-gold-gradient">Legacy Code</span>
+                Great Organizations Don&apos;t Run on <span className="text-gold-gradient">Legacy Code</span>
               </h2>
               
               <p className="text-lg md:text-xl text-soft-gray max-w-3xl mx-auto leading-relaxed mb-8">
