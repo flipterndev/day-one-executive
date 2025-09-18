@@ -455,7 +455,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Custom Workshops</h3>
-                  <p className="text-sm text-soft-gray">Tailored training programs designed for your organization's specific needs.</p>
+                  <p className="text-sm text-soft-gray">Tailored training programs designed for your organization&apos;s specific needs.</p>
                 </div>
 
                 <div className="service-card group relative bg-white/[.02] border border-white/10 rounded-xl p-6 hover:bg-white/[.04] hover:border-white/20 transition-all duration-300">
@@ -520,7 +520,7 @@ export default function Home() {
                   What will be most needed in the new era? Leaders at all levels and layers able to think and lead like executives. The best organizations will start NOW to embed executive capacity at every layer of their organization.
                 </p>
                 <p className="text-base text-soft-gray mb-8">
-                  Book a call today to see whether April Armstrong and The Day One Executive leadership development services are a fit for your team's needs.
+                  Book a call today to see whether April Armstrong and The Day One Executive leadership development services are a fit for your team&apos;s needs.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button 

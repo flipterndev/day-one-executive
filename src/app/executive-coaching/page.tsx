@@ -141,12 +141,12 @@ export default function ExecutiveCoaching() {
             {/* Introduction Section */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 max-w-4xl mx-auto">
-                Scoring that executive role isn't just a promotion. It's a <span className="text-gold-gradient">career change</span>.
+                Scoring that executive role isn&apos;t just a promotion. It&apos;s a <span className="text-gold-gradient">career change</span>.
               </h2>
               
               <div className="max-w-3xl mx-auto space-y-6 text-lg text-soft-gray leading-relaxed">
                 <p className="text-xl">
-                  Most executives struggle to adjust to the new demands, which has ripple effects on their performance, people around them, and the bottom line. As a leader's scope of impact grows, so do the risks and consequences of their actions.
+                  Most executives struggle to adjust to the new demands, which has ripple effects on their performance, people around them, and the bottom line. As a leader&apos;s scope of impact grows, so do the risks and consequences of their actions.
                 </p>
                 
                 <p className="text-xl">
@@ -154,7 +154,7 @@ export default function ExecutiveCoaching() {
                 </p>
                 
                 <p className="text-xl font-medium text-foreground">
-                  Executive coaching is the investment in people you can't afford not to make: Research shows that executive coaching returns an average of 4-8x to the dollar.
+                  Executive coaching is the investment in people you can&apos;t afford not to make: Research shows that executive coaching returns an average of 4-8x to the dollar.
                 </p>
               </div>
             </div>
@@ -165,9 +165,11 @@ export default function ExecutiveCoaching() {
               <div className="order-2 lg:order-1">
                 <div className="bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-8 flex flex-col justify-center items-center h-full">
                   <div className="relative w-full max-w-lg mx-auto">
-                    <img 
+                    <Image 
                       src="/logos/01_Armstrong_headshot.JPG" 
                       alt="Executive Coaching" 
+                      width={400}
+                      height={500}
                       className="object-contain w-full h-auto rounded-lg"
                     />
                   </div>
@@ -222,7 +224,7 @@ export default function ExecutiveCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "a knack for asking all the right questions."
+                        &ldquo;a knack for asking all the right questions.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -237,7 +239,7 @@ export default function ExecutiveCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "I saw results in record time."
+                        &ldquo;I saw results in record time.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -252,7 +254,7 @@ export default function ExecutiveCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "April helped me work through some specific challenges I was facing in lightning speed."
+                        &ldquo;April helped me work through some specific challenges I was facing in lightning speed.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -267,7 +269,7 @@ export default function ExecutiveCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "Definitely part of the next generation of coaches."
+                        &ldquo;Definitely part of the next generation of coaches.&rdquo;
                       </p>
                     </div>
                   </div>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
-import { mediaItems, type MediaItem } from "@/content/media";
+import { mediaItems } from "@/content/media";
 
 export default function MediaPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -78,7 +78,7 @@ export default function MediaPage() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gold-gradient">Hear It Firsthand</h1>
           <p className="mt-4 text-lg text-soft-gray max-w-3xl">
             Conversations and appearances that bring the Day One Executive principles to life. 
-            Explore videos, podcasts, and articles featuring April Armstrong's insights on leadership and executive success.
+            Explore videos, podcasts, and articles featuring April Armstrong&apos;s insights on leadership and executive success.
           </p>
         </div>
 

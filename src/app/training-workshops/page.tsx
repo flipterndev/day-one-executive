@@ -141,20 +141,20 @@ export default function TrainingWorkshops() {
             {/* Introduction Section */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 max-w-4xl mx-auto">
-                Clients marvel that the results they are able achieve that almost feel like <span className="text-gold-gradient">magic</span>, but it's only kinda magic.
+                Clients marvel that the results they are able achieve that almost feel like <span className="text-gold-gradient">magic</span>, but it&apos;s only kinda magic.
               </h2>
               
               <div className="max-w-3xl mx-auto space-y-6 text-lg text-soft-gray leading-relaxed">
                 <p className="text-xl">
-                  The Day One Executive workshops combine proven approaches from the science of influence and change covered in the book, with April's expert facilitation and extensive business background, to help you connect critical "people" dots and lay the crucial groundwork for the people-side of your project's success.
+                  The Day One Executive workshops combine proven approaches from the science of influence and change covered in the book, with April&apos;s expert facilitation and extensive business background, to help you connect critical &ldquo;people&rdquo; dots and lay the crucial groundwork for the people-side of your project&apos;s success.
                 </p>
                 
                 <p className="text-xl">
-                  The real marvel is the number of organizations that leave this guaranteed success element – people – to chance. April Armstrong works directly with you to customize Day One Executive workshops to your organization's needs and scenarios.
+                  The real marvel is the number of organizations that leave this guaranteed success element – people – to chance. April Armstrong works directly with you to customize Day One Executive workshops to your organization&apos;s needs and scenarios.
                 </p>
                 
                 <p className="text-xl font-medium text-foreground">
-                  Don't wait until a project is running off the rails–Book a call with April today to explore options to bring The Day One Executive to your organization.
+                  Don&apos;t wait until a project is running off the rails–Book a call with April today to explore options to bring The Day One Executive to your organization.
                 </p>
               </div>
             </div>
@@ -165,9 +165,11 @@ export default function TrainingWorkshops() {
               <div className="order-2 lg:order-1">
                 <div className="bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-8 flex flex-col justify-center items-center h-full">
                   <div className="relative w-full max-w-lg mx-auto">
-                    <img 
+                    <Image 
                       src="/logos/02_AprilSpeaking.jpg" 
                       alt="Training & Workshops" 
+                      width={400}
+                      height={500}
                       className="object-contain w-full h-auto rounded-lg"
                     />
                   </div>
@@ -186,7 +188,7 @@ export default function TrainingWorkshops() {
                   </h3>
                   <div className="space-y-6 text-lg text-soft-gray leading-relaxed">
                     <p>
-                      Day One Executive training and workshops are fun and empowering for participants—and they are also among the most immediately beneficial, broad-spectrum, pragmatic risk mitigation investments you can make because they double down on skills most correlated with project success (and risk): the "people" side.
+                      Day One Executive training and workshops are fun and empowering for participants—and they are also among the most immediately beneficial, broad-spectrum, pragmatic risk mitigation investments you can make because they double down on skills most correlated with project success (and risk): the &ldquo;people&rdquo; side.
                     </p>
                     <div className="grid grid-cols-2 gap-6 mt-8">
                       <div className="text-center">
@@ -222,7 +224,7 @@ export default function TrainingWorkshops() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "Thank you for facilitating the best offsite we have ever had."
+                        &ldquo;Thank you for facilitating the best offsite we have ever had.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -237,7 +239,7 @@ export default function TrainingWorkshops() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "One of the quickest studies I've ever seen...a truly remarkable talent."
+                        &ldquo;One of the quickest studies I&apos;ve ever seen...a truly remarkable talent.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -252,7 +254,7 @@ export default function TrainingWorkshops() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "a superb facilitator with an innate ability to connect with workshop participants"
+                        &ldquo;a superb facilitator with an innate ability to connect with workshop participants&rdquo;
                       </p>
                     </div>
                   </div>
@@ -267,7 +269,7 @@ export default function TrainingWorkshops() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "a wealth of experience... and a deep toolkit"
+                        &ldquo;a wealth of experience... and a deep toolkit&rdquo;
                       </p>
                     </div>
                   </div>

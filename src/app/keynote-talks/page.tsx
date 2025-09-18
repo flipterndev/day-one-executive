@@ -141,7 +141,7 @@ export default function KeynoteTalks() {
             {/* Introduction Section */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 max-w-4xl mx-auto">
-                April Armstrong's Day One Executive keynote talks have inspired <span className="text-gold-gradient">thousands of people</span> from dozens of stages as a keynote speaker across the United States and in Europe including at Harvard and West Point.
+                April Armstrong&apos;s Day One Executive keynote talks have inspired <span className="text-gold-gradient">thousands of people</span> from dozens of stages as a keynote speaker across the United States and in Europe including at Harvard and West Point.
               </h2>
               
               <div className="max-w-3xl mx-auto space-y-6 text-lg text-soft-gray leading-relaxed">
@@ -217,9 +217,11 @@ export default function KeynoteTalks() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="relative">
-                    <img 
+                    <Image 
                       src="/logos/04_April Armstrong at Westpoint with Buzz Aldrin.jpg" 
                       alt="April Armstrong at West Point with Buzz Aldrin" 
+                      width={300}
+                      height={192}
                       className="object-cover w-full h-48 rounded-lg"
                     />
                     <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
@@ -227,9 +229,11 @@ export default function KeynoteTalks() {
                     </div>
                   </div>
                   <div className="relative">
-                    <img 
+                    <Image 
                       src="/logos/04_April at Harvard_Crowd.png" 
                       alt="April Armstrong speaking at Harvard" 
+                      width={300}
+                      height={192}
                       className="object-cover w-full h-48 rounded-lg"
                     />
                     <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
@@ -237,9 +241,11 @@ export default function KeynoteTalks() {
                     </div>
                   </div>
                   <div className="relative">
-                    <img 
+                    <Image 
                       src="/logos/04_April_JMU_CrowdShot.jpg" 
                       alt="April Armstrong speaking at JMU" 
+                      width={300}
+                      height={192}
                       className="object-cover w-full h-48 rounded-lg"
                     />
                     <div className="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
@@ -269,7 +275,7 @@ export default function KeynoteTalks() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "… incredible energy and such a powerful method of delivering a talk."
+                        &ldquo;… incredible energy and such a powerful method of delivering a talk.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -284,7 +290,7 @@ export default function KeynoteTalks() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "Your inspirational presentation will not leave my mind!"
+                        &ldquo;Your inspirational presentation will not leave my mind!&rdquo;
                       </p>
                     </div>
                   </div>
@@ -299,7 +305,7 @@ export default function KeynoteTalks() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "Thank you for the stellar presentation you gave. We have received fantastic feedback. YOU ROCK!!!!"
+                        &ldquo;Thank you for the stellar presentation you gave. We have received fantastic feedback. YOU ROCK!!!!&rdquo;
                       </p>
                     </div>
                   </div>
@@ -314,7 +320,7 @@ export default function KeynoteTalks() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "Pure gold~I have seen her change the entire feeling in a room of leaders"
+                        &ldquo;Pure gold~I have seen her change the entire feeling in a room of leaders&rdquo;
                       </p>
                     </div>
                   </div>

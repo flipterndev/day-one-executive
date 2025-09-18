@@ -150,11 +150,11 @@ export default function TeamCoaching() {
                 </p>
                 
                 <p className="text-xl">
-                  April Armstrong's Day One Executive team coaching programs are born from decades of lived experience, coupled with leading edge research.
+                  April Armstrong&apos;s Day One Executive team coaching programs are born from decades of lived experience, coupled with leading edge research.
                 </p>
                 
                 <p className="text-xl font-medium text-foreground">
-                  Negative dynamics do not have to have the final word: You can move a team from stuck to stoked, celebrating a huge shared victory—where everybody wins (there's no better feeling).
+                  Negative dynamics do not have to have the final word: You can move a team from stuck to stoked, celebrating a huge shared victory—where everybody wins (there&apos;s no better feeling).
                 </p>
               </div>
             </div>
@@ -165,9 +165,11 @@ export default function TeamCoaching() {
               <div className="order-2 lg:order-1">
                 <div className="bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-8 flex flex-col justify-center items-center h-full">
                   <div className="relative w-full max-w-md mx-auto h-80 flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/logos/03_AprilArmstrongbyStephanieRichardson-7576.jpg" 
                       alt="Team Coaching" 
+                      width={400}
+                      height={500}
                       className="object-contain max-w-full max-h-full rounded-lg"
                     />
                   </div>
@@ -332,7 +334,7 @@ export default function TeamCoaching() {
                 </h3>
                 <div className="text-center">
                   <p className="text-lg text-soft-gray leading-relaxed mb-6">
-                    One word of caution: team coaching requires cooperation and engagement of the team leader, who has a disproportionate influence on a team's success. But the best team leaders are committed to the team's success so are all in (yes, this is a litmus test – don't book a call if you're not willing to dive in yourself).
+                    One word of caution: team coaching requires cooperation and engagement of the team leader, who has a disproportionate influence on a team&apos;s success. But the best team leaders are committed to the team&apos;s success so are all in (yes, this is a litmus test – don&apos;t book a call if you&apos;re not willing to dive in yourself).
                   </p>
                   <p className="text-xl font-medium text-foreground">
                     Reach out today to discover how April can introduce leading-edge tools and coaching techniques to help your teams transform into powerhouses of possibility.

@@ -146,7 +146,7 @@ export default function PrivateCoaching() {
               
               <div className="max-w-3xl mx-auto space-y-6 text-lg text-soft-gray leading-relaxed">
                 <p className="text-xl">
-                  Executives reach out to April for private coaching when they prefer to leverage coaching support outside of an employer's offering. She is known for a compassionate-yet-direct style.
+                  Executives reach out to April for private coaching when they prefer to leverage coaching support outside of an employer&apos;s offering. She is known for a compassionate-yet-direct style.
                 </p>
                 
                 <p className="text-xl">
@@ -169,9 +169,11 @@ export default function PrivateCoaching() {
               <div className="order-2 lg:order-1">
                 <div className="bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-8 flex flex-col justify-center items-center h-full">
                   <div className="relative w-full max-w-md mx-auto h-80 flex items-center justify-center">
-                    <img 
+                    <Image 
                       src="/logos/06_AprilArmstrongbyStephanieRichardson-7367.jpg" 
                       alt="Private Coaching" 
+                      width={400}
+                      height={500}
                       className="object-contain max-w-full max-h-full rounded-lg"
                     />
                   </div>
@@ -194,16 +196,20 @@ export default function PrivateCoaching() {
                     </p>
                     <div className="grid grid-cols-2 gap-6 mt-8 items-center">
                       <div className="text-center">
-                        <img 
+                        <Image 
                           src="https://mbraining.it/wp-content/uploads/2023/05/coach-mbraining.webp" 
                           alt="mBraining Coach Certification" 
+                          width={128}
+                          height={128}
                           className="w-full max-w-32 mx-auto"
                         />
                       </div>
                       <div className="text-center">
-                        <img 
+                        <Image 
                           src="https://centerforexecutivecoaching.com/wp-content/uploads/ICF_CCE_Mark_Color-300x270.png" 
                           alt="ICF CCE Continuing Coach Education" 
+                          width={96}
+                          height={96}
                           className="w-full max-w-24 mx-auto"
                         />
                       </div>
@@ -232,7 +238,7 @@ export default function PrivateCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "I just want to express my gratitude for being my coach throughout the last several months."
+                        &ldquo;I just want to express my gratitude for being my coach throughout the last several months.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -247,7 +253,7 @@ export default function PrivateCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "I saw results in record time."
+                        &ldquo;I saw results in record time.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -262,7 +268,7 @@ export default function PrivateCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "April helped me work through some specific challenges I was facing in lightning speed."
+                        &ldquo;April helped me work through some specific challenges I was facing in lightning speed.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -277,7 +283,7 @@ export default function PrivateCoaching() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        "a depth of experience and intellect that is hard to find."
+                        &ldquo;a depth of experience and intellect that is hard to find.&rdquo;
                       </p>
                     </div>
                   </div>
