@@ -308,7 +308,7 @@ export default function TrainingWorkshops() {
                 Ready to Transform Your Team?
               </h3>
               <p className="text-lg text-soft-gray mb-8 max-w-3xl mx-auto">
-                Book a call with April to explore how customized training and workshops can accelerate your organization's success.
+                Book a call with April to explore how customized training and workshops can accelerate your organization&apos;s success.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="btn-gold text-base px-10 py-4 text-lg font-semibold">

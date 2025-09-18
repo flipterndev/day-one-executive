@@ -188,7 +188,7 @@ export default function ExecutiveCoaching() {
                   </h3>
                   <div className="space-y-6 text-lg text-soft-gray leading-relaxed">
                     <p>
-                      Trusted by Fortune 500 companies and our nation's top intelligence agencies for three decades, April Armstrong has coached dozens of private and public sector top executives and senior officials around some of the most sensitive challenges.
+                      Trusted by Fortune 500 companies and our nation&apos;s top intelligence agencies for three decades, April Armstrong has coached dozens of private and public sector top executives and senior officials around some of the most sensitive challenges.
                     </p>
                     <div className="grid grid-cols-2 gap-6 mt-8">
                       <div className="text-center">
