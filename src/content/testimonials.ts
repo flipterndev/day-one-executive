@@ -10,7 +10,7 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: `Full of practical, easily understandable leadership wisdom that anyone can apply to their own life, starting immediately… I wish I'd had this book when I was starting out as a young professional.`,
+    quote: `Full of practical, easily understandable leadership wisdom that anyone can apply to their own life, starting immediately… I wish I&apos;d had this book when I was starting out as a young professional.`,
     name: "Jonathan R. Alger",
     title: "President",
     company: "James Madison University",
@@ -19,7 +19,7 @@ export const testimonials: Testimonial[] = [
     featured: true,
   },
   {
-    quote: `…the essence of what it takes to be a successful executive… a 'secret decoder ring.'`,
+    quote: `…the essence of what it takes to be a successful executive… a &apos;secret decoder ring.&apos;`,
     name: "The Honorable Susan M. Gordon",
     title: "Former Principal Deputy Director of National Intelligence",
     avatar: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Susan_M._Gordon_official_photo.jpg",
