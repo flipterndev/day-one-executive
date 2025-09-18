@@ -14,8 +14,8 @@ export default function Testimonials({ items }: Props) {
       <figure className="relative rounded-lg md:rounded-xl border border-white/10 p-6 md:p-8 bg-white/[.02] md:bg-white/[.03] shadow-md hover:bg-white/[.04] md:hover:bg-white/[.04] transition-shadow hover:shadow-md">
         {featured.logo && (
           <div className="pointer-events-none absolute inset-0 z-0">
-            <div className="absolute inset-0 md:right-3 flex items-center justify-center md:block opacity-10 md:opacity-20" style={{ bottom: "auto" }}>
-              <span className="relative block h-24 w-48 md:h-44 md:w-80">
+            <div className="absolute -bottom-12 right-3 flex items-end justify-end opacity-10 md:opacity-20">
+              <span className="relative block h-32 w-64 md:h-40 md:w-80">
                 <Image src={featured.logo} alt="" fill className="object-contain" />
               </span>
             </div>
@@ -80,7 +80,7 @@ export default function Testimonials({ items }: Props) {
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
             </div>
-            <figcaption className="mt-4 flex flex-col items-start gap-1 text-xs text-soft-gray relative z-10">
+            <figcaption className={`${t.name === "Maggie Wilderotter" ? "mt-17" : "mt-4"} flex flex-col items-start gap-1 text-xs text-soft-gray relative z-10`}>
               <span>
                 — {t.name}
                 {t.title ? `, ${t.title}` : ""}

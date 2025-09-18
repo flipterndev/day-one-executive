@@ -38,7 +38,7 @@ export default function PreorderButton({ variant = "hero", className = "" }: Pro
     if (e.target === dialogRef.current) setOpen(false);
   }
 
-  const label = "Read now";
+  const label = "Read Now";
 
   const modal = (
     <div

@@ -99,6 +99,22 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "brand.psu.edu",
       },
+      {
+        protocol: "https",
+        hostname: "identity.usc.edu",
+      },
+      {
+        protocol: "https",
+        hostname: "d2jyir0m79gs60.cloudfront.net",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.simpleviewinc.com",
+      },
+      {
+        protocol: "https",
+        hostname: "logos-world.net",
+      },
     ],
   },
 };

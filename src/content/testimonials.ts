@@ -10,7 +10,7 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: `The Day One Executive is full of practical, easily understandable leadership wisdom that anyone can apply to their own life, starting immediately. Having learned many of these lessons the hard way through the trials and tribulations of life experience, I wish I'd had this book when I was starting out as a young professional. April's advice will help readers to become more self-aware and intentional about their decisions and behavior and to build confidence and agency that will, in turn, lead to a greater sense of control and purpose throughout their lives and careers.`,
+    quote: `Full of practical, easily understandable leadership wisdom that anyone can apply to their own life, starting immediately… I wish I'd had this book when I was starting out as a young professional.`,
     name: "Jonathan R. Alger",
     title: "President",
     company: "James Madison University",
@@ -19,14 +19,14 @@ export const testimonials: Testimonial[] = [
     featured: true,
   },
   {
-    quote: `April has, in the most clear, direct, and relatable language, captured the essence of what it takes to be a successful executive. In these disrupted, complex times, exceptional leadership will carry the day—and now, we all have a 'secret decoder ring' to help us on our way.`,
+    quote: `…the essence of what it takes to be a successful executive… a 'secret decoder ring.'`,
     name: "The Honorable Susan M. Gordon",
     title: "Former Principal Deputy Director of National Intelligence",
     avatar: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Susan_M._Gordon_official_photo.jpg",
     logo: "https://upload.wikimedia.org/wikipedia/commons/2/27/Seal_of_the_Office_of_the_Director_of_National_Intelligence.svg",
   },
   {
-    quote: `For those aspiring to sit in the executive suite—a must read! April has provided a clear playbook for a successful career by providing great examples and tips to build on your strengths, recognize your blind spots, and embrace change.`,
+    quote: `…a clear playbook for a successful career.`,
     name: "Maggie Wilderotter",
     title: "Former President and Chief Executive Officer (CEO)",
     company: "Frontier Communications",
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     logo: "https://upload.wikimedia.org/wikipedia/commons/0/02/Frontier_communications_logo_2022.png",
   },
   {
-    quote: `This book compresses a decade of learning to help you fasttrack your success without taking any shortcuts: Whether you're just starting out or you're a seasoned professional, The Day One Executive is a must-read! Make tomorrow your own Day One—you will thank you.`,
+    quote: `…compresses a decade of learning to help you fast-track your success without taking any shortcuts—a must read.`,
     name: "Rebecca M. Brewster",
     title: "President and Chief Operating Officer",
     company: "American Transportation Research Institute",
