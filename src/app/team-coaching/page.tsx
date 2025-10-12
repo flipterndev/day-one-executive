@@ -72,36 +72,38 @@ export default function TeamCoaching() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur bg-black/50 border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/logos/key.png" alt="Site logo" width={32} height={32} className="object-contain" />
-            <span className="font-semibold tracking-tight">Day One Executive</span>
-          </Link>
-          <nav className="hidden sm:flex items-center gap-4">
-            <a href="https://www.instagram.com/aprilarmstronglive" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+        <div className="mx-auto max-w-7xl px-6 py-4">
+          {/* Logo and Home Link */}
+          <div className="flex items-center justify-between mb-3">
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image src="/logos/key.png" alt="Site logo" width={32} height={32} className="object-contain group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-semibold tracking-tight group-hover:text-gold-gradient transition-colors duration-300">Day One Executive</span>
+            </Link>
+            <Link href="/" className="text-sm text-soft-gray hover:text-gold-gradient transition-colors duration-300 flex items-center gap-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
-            </a>
-            <a href="https://www.facebook.com/aprilarmstrong.LIVE/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.64L18 10h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
-            <a href="https://x.com/ahaconsult" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M18 6L6 18M6 6l12 12"></path>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/ahainsight/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              </svg>
-            </a>
+              Home
+            </Link>
+          </div>
+          
+          {/* Services Navigation */}
+          <nav className="flex flex-wrap items-center gap-2">
+            <Link href="/executive-coaching" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Executive Coaching
+            </Link>
+            <Link href="/training-workshops" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Training & Workshops
+            </Link>
+            <Link href="/keynote-talks" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Keynote Talks
+            </Link>
+            <Link href="/team-coaching" className="text-xs px-3 py-1.5 rounded-full border border-gold-gradient bg-gold-gradient/10 text-gold-gradient font-medium hover:bg-gold-gradient/20 transition-all duration-300">
+              Strategic Advisory
+            </Link>
+            <Link href="/private-coaching" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Private Coaching
+            </Link>
           </nav>
         </div>
       </header>
@@ -112,21 +114,21 @@ export default function TeamCoaching() {
           <div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-end), transparent 70%)" }} />
           <div className="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-start), transparent 70%)" }} />
           
-          <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <div className="relative mx-auto max-w-6xl px-6 py-12 md:py-16 pb-8 md:pb-10">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.06] px-4 py-2 mb-6">
-                <span className="flex items-center gap-1" aria-hidden style={{ color: "var(--gold-start)" }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                  <span className="text-sm font-medium">Team Coaching</span>
+                <span className="flex items-center gap-2" aria-hidden style={{ color: "var(--gold-start)" }}>
+                  <Image src="/logos/key.png" alt="Key icon" width={16} height={16} className="object-contain" />
+                  <span className="text-sm font-medium">Strategic Advisory</span>
                 </span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                From <span className="text-gold-gradient">Stalled to Stellar</span>: Team Coaching
+                From <span className="text-gold-gradient">Stalled to Stellar</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-soft-gray max-w-4xl mx-auto leading-relaxed">
-                Transform your teams into powerhouses of possibility
+                Strategic Advisory
               </p>
             </div>
           </div>
@@ -137,25 +139,87 @@ export default function TeamCoaching() {
           <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-start), transparent 70%)" }} />
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-end), transparent 70%)" }} />
           
-          <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="relative mx-auto max-w-7xl px-6 pt-8 md:pt-12 pb-16 md:pb-24">
             {/* Introduction Section */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 max-w-4xl mx-auto">
-                Only <span className="text-gold-gradient">30% of teams</span> are considered high performing. Teams with effective collaboration are 5x more successful than those that wing it.
+                Great results happen by design.
               </h2>
               
               <div className="max-w-3xl mx-auto space-y-6 text-lg text-soft-gray leading-relaxed">
                 <p className="text-xl">
-                  Chances are, you can further streamline your bottom line and have happier staff by adding team coaching into your leadership development investment mix.
+                  Everybody knows that project failure is no fun, but it can also be costly. Despite advancements in project management, 70% of projects still fail to meet objectives or experience major cost overruns.
                 </p>
                 
                 <p className="text-xl">
-                  April Armstrong&apos;s Day One Executive team coaching programs are born from decades of lived experience, coupled with leading edge research.
+                  High-stakes initiatives share one common under-appreciated risk factor: People. Success requires the cooperation, if not the active investment, of multiple parties—some of whom have different and evening divergent interests. For executives, it means managing expectations up, down, and all around.
+                </p>
+                
+                <p className="text-xl">
+                  April has led dozens of high-stakes initiatives over the course of her career spanning multiple sectors and valued in the billions of dollars—and has advised dozens more executives leading complex, high-consequence projects and deals.
+                </p>
+                
+                <p className="text-xl">
+                  With decades of experience, April is able to quickly spot high-risk areas in your initiative, on which success and failure ultimately hinges. Her pragmatic, research-based stakeholder engagement advisory can turn your project around and get it on stable ground. If the winds are in your favor, you have the chance to build real momentum and become a huge success where everybody wins (feels pretty good).
                 </p>
                 
                 <p className="text-xl font-medium text-foreground">
-                  Negative dynamics do not have to have the final word: You can move a team from stuck to stoked, celebrating a huge shared victory—where everybody wins (there&apos;s no better feeling).
+                  It seems soft, but it&apos;s really science. April blends a unique background in technology combined with enterprise-scale strategy, systems integration, management and execution, interpersonal communication, negotiation, mediation, and consensus strategy. She is accredited in public relations and crisis communications, and brings systematic approaches that help you quantitatively and qualitatively assess perceptions and power dynamics and be efficient and strategic with influence.
                 </p>
+              </div>
+            </div>
+
+            {/* Stats Section */}
+            <div className="mb-16">
+              <div className="relative">
+                {/* Background decoration */}
+                <div className="absolute inset-0 -z-10">
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full bg-gold-gradient opacity-5 blur-3xl"></div>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-6">
+                  {/* Stat 1 */}
+                  <div className="group relative bg-gradient-to-br from-white/[.05] to-white/[.02] border border-white/10 rounded-2xl p-8 text-center hover:border-gold-gradient/30 hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-gold-gradient/10">
+                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <div className="text-6xl md:text-7xl font-bold text-gold-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
+                        240%
+                      </div>
+                      <div className="h-1 w-16 bg-gold-gradient mx-auto mb-4 rounded-full"></div>
+                      <p className="text-sm text-soft-gray leading-relaxed">
+                        The average overrun of change projects that fail to achieve objectives.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Stat 2 */}
+                  <div className="group relative bg-gradient-to-br from-white/[.05] to-white/[.02] border border-white/10 rounded-2xl p-8 text-center hover:border-gold-gradient/30 hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-gold-gradient/10">
+                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <div className="text-6xl md:text-7xl font-bold text-gold-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
+                        3x
+                      </div>
+                      <div className="h-1 w-16 bg-gold-gradient mx-auto mb-4 rounded-full"></div>
+                      <p className="text-sm text-soft-gray leading-relaxed">
+                        Less return on investment experienced by organizations that do not excel in stakeholder engagement.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Stat 3 */}
+                  <div className="group relative bg-gradient-to-br from-white/[.05] to-white/[.02] border border-white/10 rounded-2xl p-8 text-center hover:border-gold-gradient/30 hover:scale-105 transition-all duration-500 hover:shadow-2xl hover:shadow-gold-gradient/10">
+                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div className="relative z-10">
+                      <div className="text-6xl md:text-7xl font-bold text-gold-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
+                        5x
+                      </div>
+                      <div className="h-1 w-16 bg-gold-gradient mx-auto mb-4 rounded-full"></div>
+                      <p className="text-sm text-soft-gray leading-relaxed">
+                        More cost to re-establish a damaged relationship with a customer.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -205,127 +269,6 @@ export default function TeamCoaching() {
               </div>
             </div>
 
-            {/* 7 Deadly Dynamics Section */}
-            <div className="mb-16">
-              <div className="text-center mb-16">
-                <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  The <span className="text-gold-gradient">7 Deadly Dynamics</span>
-                </h3>
-                <p className="text-lg text-soft-gray max-w-3xl mx-auto mb-8">
-                  According to research, these are the key areas teams must address to achieve high performance
-                </p>
-                <div className="w-24 h-1 bg-gold-gradient mx-auto rounded-full"></div>
-              </div>
-              
-              {/* Hexagonal Layout */}
-              <div className="relative max-w-5xl mx-auto">
-                {/* Background decoration */}
-                <div className="absolute inset-0 -z-10">
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-gold-gradient opacity-5 blur-3xl"></div>
-                </div>
-                
-                {/* Top Row - 3 items */}
-                <div className="flex justify-center gap-8 mb-8">
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-48">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Role Clarity</h4>
-                      <p className="text-xs text-soft-gray">Clear responsibilities</p>
-                    </div>
-                  </div>
-                  
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-48">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Constructive Conflict</h4>
-                      <p className="text-xs text-soft-gray">Healthy debate</p>
-                    </div>
-                  </div>
-                  
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-48">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Accountability</h4>
-                      <p className="text-xs text-soft-gray">Ownership</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Middle Row - 2 items */}
-                <div className="flex justify-center gap-16 mb-8">
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-56">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H16c-.8 0-1.54.37-2.01.99L12 11l-1.99-2.01A2.5 2.5 0 0 0 8 8H5.46c-.8 0-1.54.37-2.01.99L1 18.5H3.5V22h16z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Collaboration & Relational Coordination</h4>
-                      <p className="text-xs text-soft-gray">Seamless teamwork</p>
-                    </div>
-                  </div>
-                  
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-56">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Communication & Team Norms</h4>
-                      <p className="text-xs text-soft-gray">Clear channels</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Bottom Row - 2 items */}
-                <div className="flex justify-center gap-8">
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-48">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Trust & Cohesion</h4>
-                      <p className="text-xs text-soft-gray">Strong bonds</p>
-                    </div>
-                  </div>
-                  
-                  <div className="group relative bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-6 text-center hover:border-gold-gradient/30 hover:bg-white/[.04] transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-gold-gradient/10 w-48">
-                    <div className="absolute inset-0 bg-gradient-to-br from-gold-gradient/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <div className="relative z-10">
-                      <div className="w-12 h-12 mx-auto mb-4 bg-gold-gradient rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-6 h-6" fill="#DDBE70" viewBox="0 0 24 24">
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                        </svg>
-                      </div>
-                      <h4 className="text-lg font-bold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Adaptability</h4>
-                      <p className="text-xs text-soft-gray">Flexibility</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Leadership Requirement Section */}
             <div className="mb-16">
               <div className="bg-gradient-to-br from-white/[.02] to-white/[.01] border border-white/10 rounded-2xl p-8 max-w-4xl mx-auto">
@@ -351,7 +294,7 @@ export default function TeamCoaching() {
                     Book Your Discovery Call
                   </h3>
                   <p className="text-lg text-soft-gray">
-                    Schedule a consultation to discuss your team coaching needs
+                    Schedule a consultation to discuss your team coaching needs.
                   </p>
                 </div>
                 <div 

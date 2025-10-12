@@ -72,36 +72,38 @@ export default function KeynoteTalks() {
     <div className="min-h-screen bg-background text-foreground">
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur bg-black/50 border-b border-white/10">
-        <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src="/logos/key.png" alt="Site logo" width={32} height={32} className="object-contain" />
-            <span className="font-semibold tracking-tight">Day One Executive</span>
-          </Link>
-          <nav className="hidden sm:flex items-center gap-4">
-            <a href="https://www.instagram.com/aprilarmstronglive" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+        <div className="mx-auto max-w-7xl px-6 py-4">
+          {/* Logo and Home Link */}
+          <div className="flex items-center justify-between mb-3">
+            <Link href="/" className="flex items-center gap-3 group">
+              <Image src="/logos/key.png" alt="Site logo" width={32} height={32} className="object-contain group-hover:scale-110 transition-transform duration-300" />
+              <span className="font-semibold tracking-tight group-hover:text-gold-gradient transition-colors duration-300">Day One Executive</span>
+            </Link>
+            <Link href="/" className="text-sm text-soft-gray hover:text-gold-gradient transition-colors duration-300 flex items-center gap-1">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
-            </a>
-            <a href="https://www.facebook.com/aprilarmstrong.LIVE/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3.64L18 10h-4V7a1 1 0 0 1 1-1h3z"></path>
-              </svg>
-            </a>
-            <a href="https://x.com/ahaconsult" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M18 6L6 18M6 6l12 12"></path>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/ahainsight/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/80 hover:text-white transition-colors">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              </svg>
-            </a>
+              Home
+            </Link>
+          </div>
+          
+          {/* Services Navigation */}
+          <nav className="flex flex-wrap items-center gap-2">
+            <Link href="/executive-coaching" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Executive Coaching
+            </Link>
+            <Link href="/training-workshops" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Training & Workshops
+            </Link>
+            <Link href="/keynote-talks" className="text-xs px-3 py-1.5 rounded-full border border-gold-gradient bg-gold-gradient/10 text-gold-gradient font-medium hover:bg-gold-gradient/20 transition-all duration-300">
+              Keynote Talks
+            </Link>
+            <Link href="/team-coaching" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Strategic Advisory
+            </Link>
+            <Link href="/private-coaching" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
+              Private Coaching
+            </Link>
           </nav>
         </div>
       </header>
@@ -112,17 +114,17 @@ export default function KeynoteTalks() {
           <div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-end), transparent 70%)" }} />
           <div className="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-start), transparent 70%)" }} />
           
-          <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <div className="relative mx-auto max-w-6xl px-6 py-12 md:py-16 pb-8 md:pb-10">
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.06] px-4 py-2 mb-6">
-                <span className="flex items-center gap-1" aria-hidden style={{ color: "var(--gold-start)" }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span className="flex items-center gap-2" aria-hidden style={{ color: "var(--gold-start)" }}>
+                  <Image src="/logos/key.png" alt="Key icon" width={16} height={16} className="object-contain" />
                   <span className="text-sm font-medium">Keynote Talks</span>
                 </span>
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                <span className="text-gold-gradient">Ignite Possibility</span>: Keynote Talks
+                <span className="text-gold-gradient">Ignite Possibility</span>—at Scale
               </h1>
               
               <p className="text-xl md:text-2xl text-soft-gray max-w-4xl mx-auto leading-relaxed">
@@ -137,7 +139,7 @@ export default function KeynoteTalks() {
           <div className="pointer-events-none absolute -top-24 -right-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-start), transparent 70%)" }} />
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-end), transparent 70%)" }} />
           
-          <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-24">
+          <div className="relative mx-auto max-w-7xl px-6 pt-8 md:pt-12 pb-16 md:pb-24">
             {/* Introduction Section */}
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 max-w-4xl mx-auto">
@@ -146,11 +148,7 @@ export default function KeynoteTalks() {
               
               <div className="max-w-3xl mx-auto space-y-6 text-lg text-soft-gray leading-relaxed">
                 <p className="text-xl">
-                  Her energy, wit, and vulnerability inspire, uplift and rally audiences to a greater future.
-                </p>
-                
-                <p className="text-xl">
-                  Each talk is unique because your organization is unique.
+                  April&apos;s energy, wit, and vulnerability rally audiences to a greater future. Dynamic, interactive, and relevant, April works with you to customize her message for your event&apos;s purpose and to tap relevance from your audience&apos;s perspectives.
                 </p>
                 
                 <p className="text-xl font-medium text-foreground">
@@ -320,7 +318,7 @@ export default function KeynoteTalks() {
                     </div>
                     <div>
                       <p className="text-lg text-soft-gray leading-relaxed mb-4">
-                        &ldquo;Pure gold~I have seen her change the entire feeling in a room of leaders&rdquo;
+                        &ldquo;Pure gold~I have seen her change the entire feeling in a room of leaders.&rdquo;
                       </p>
                     </div>
                   </div>
@@ -336,7 +334,7 @@ export default function KeynoteTalks() {
                     Book Your Discovery Call
                   </h3>
                   <p className="text-lg text-soft-gray">
-                    Schedule a consultation to discuss your keynote speaking needs
+                    Schedule a consultation to discuss your keynote speaking needs.
                   </p>
                 </div>
                 <div 

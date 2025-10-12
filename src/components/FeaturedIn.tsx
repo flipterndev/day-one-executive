@@ -10,6 +10,7 @@ const logos = [
   { src: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/93ee227e-38bf-4f0f-9be4-bce0cbbd07b5/dfktd9n-eb17da0f-03b3-47e8-b9df-ae9d077825a3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkzZWUyMjdlLTM4YmYtNGYwZi05YmU0LWJjZTBjYmJkMDdiNVwvZGZrdGQ5bi1lYjE3ZGEwZi0wM2IzLTQ3ZTgtYjlkZi1hZTlkMDc3ODI1YTMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6pf7mXPJdWAFoLo7F-hddGQe-nDDAIGLF_52EkBkp0k", alt: "Fox" },
   { src: "https://www.pngkit.com/png/full/141-1419851_cw-logo.png", alt: "The CW" },
   { src: "https://booklife.com/marlin/images/booklife-logo.png", alt: "BookLife" },
+  { src: "https://events.latimes.com/festivalofbooks/files/2023/01/logophase1.png", alt: "LA Times Festival of Books" },
 ];
 
 export default function FeaturedIn({ compact = false }: Props) {

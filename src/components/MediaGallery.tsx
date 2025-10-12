@@ -45,7 +45,7 @@ export default function MediaGallery({ items }: Props) {
               tab === key ? "btn-gold border-transparent" : "btn-ghost"
             }`}
           >
-            {key === "video" ? "YouTube Videos" : key === "podcast" ? "Podcasts" : "Articles"}
+            {key === "video" ? "Videos" : key === "podcast" ? "Podcasts" : "Articles"}
           </button>
         ))}
       </div>

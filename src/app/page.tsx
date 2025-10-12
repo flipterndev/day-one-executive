@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MediaGallery from "@/components/MediaGallery";
-import { mediaItems } from "@/content/media";
+import { featuredMediaItems } from "@/content/media";
 import FeaturedIn from "@/components/FeaturedIn";
 import PreorderButton from "@/components/PreorderModal";
 import Testimonials from "@/components/Testimonials";
@@ -67,6 +67,12 @@ export default function Home() {
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
               </svg>
             </a>
+            <a href="https://www.youtube.com/@aprilarmstrongLIVE" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-white/80 hover:text-white transition-colors">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
+              </svg>
+            </a>
           </nav>
           <div className="flex items-center gap-3">
             <PreorderButton variant="header" />
@@ -107,7 +113,7 @@ export default function Home() {
                     Preview
                   </a>
                 </div>
-                <p className="mt-4 text-xs text-soft-gray">Available in hardcover, ebook, and audiobook</p>
+                <p className="mt-4 text-xs text-soft-gray">Available in hardcover, paperback, ebook, and audiobook</p>
                 <div className="mt-4 flex items-center gap-4">
           <Image
                     src="https://www.thebookfest.com/wp-content/uploads/2022/03/The-BookFest-First-Place-Book-Award.png"
@@ -162,7 +168,7 @@ export default function Home() {
                       </span>
                       <div>
                         <div className="text-sm font-medium">Know the Driving Force</div>
-                        <div className="text-sm text-soft-gray">Understand the core motivations and strategic priorities that propel a business forward.</div>
+                        <div className="text-sm text-soft-gray">Understand the core motivations and priorities that propel a business forward.</div>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -180,7 +186,7 @@ export default function Home() {
                       </span>
                       <div>
                         <div className="text-sm font-medium">Know Your Value</div>
-                        <div className="text-sm text-soft-gray">Confidently advocate for yourself in career advancement and compensation discussions.</div>
+                        <div className="text-sm text-soft-gray">Advocate for yourself in career advancement and compensation discussions.</div>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -208,6 +214,15 @@ export default function Home() {
                       <div>
                         <div className="text-sm font-medium">Be a Change Agent</div>
                         <div className="text-sm text-soft-gray">Navigate uncertainty, lead transformation, and move teams forward with confidence.</div>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-0.5 inline-flex h-5 w-5 aspect-square flex-none items-center justify-center rounded-full" style={{ background: "linear-gradient(90deg, var(--gold-start), var(--gold-end))" }}>
+                        <svg className="text-black" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+                      </span>
+                      <div>
+                        <div className="text-sm font-medium">Operate with Urgency</div>
+                        <div className="text-sm text-soft-gray">Execute quickly, without sacrificing quality, so results compound fast.</div>
                       </div>
                     </li>
                   </ul>
@@ -251,6 +266,15 @@ export default function Home() {
                         <svg className="text-black" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
                       </span>
                       <div>
+                        <div className="text-sm font-medium">Exude Presence</div>
+                        <div className="text-sm text-soft-gray">Say less. Influence more.</div>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="mt-0.5 inline-flex h-5 w-5 aspect-square flex-none items-center justify-center rounded-full" style={{ background: "linear-gradient(90deg, var(--gold-start), var(--gold-end))" }}>
+                        <svg className="text-black" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+                      </span>
+                      <div>
                         <div className="text-sm font-medium">Be Accountable</div>
                         <div className="text-sm text-soft-gray">Own your actions and model excellence so others rise to the standard you set.</div>
                       </div>
@@ -261,7 +285,7 @@ export default function Home() {
                       </span>
                       <div>
                         <div className="text-sm font-medium">Raise the Bar</div>
-                        <div className="text-sm text-soft-gray">Inspire higher performance by setting clear expectations and living them yourself.</div>
+                        <div className="text-sm text-soft-gray">Make yesterday's best tomorrow's benchmark.</div>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -342,7 +366,7 @@ export default function Home() {
                       </span>
                       <div>
                         <div className="text-sm font-medium">Commit to You</div>
-                        <div className="text-sm text-soft-gray">Ground yourself in a personal vision and values that carry you through every season.</div>
+                        <div className="text-sm text-soft-gray">Treat your life and your future like a non-negotiable priority: Go all in on you and live your legacy.</div>
                       </div>
                     </li>
                   </ul>
@@ -357,12 +381,12 @@ export default function Home() {
           <div className="pointer-events-none absolute -bottom-24 -left-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-end), transparent 70%)" }} />
           <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
             <div className="flex items-end justify-between gap-4">
-              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">Hear It Firsthand</h2>
+              <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">In the Media</h2>
               <a href="/media" className="text-xs hover:underline underline-offset-4 text-soft-gray">View all</a>
             </div>
-            <p className="mt-3 text-sm text-soft-gray max-w-prose">Conversations and appearances that bring The Day One Executive principles to life.</p>
+            <p className="mt-3 text-sm text-soft-gray max-w-prose">Conversations and appearances with author April Armstrong that bring The Day One Executive principles to life.</p>
             <div className="mt-8">
-              <MediaGallery items={mediaItems} />
+              <MediaGallery items={featuredMediaItems} />
             </div>
           </div>
         </section>
@@ -372,7 +396,7 @@ export default function Home() {
           <div className="pointer-events-none absolute -top-24 -left-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-end), transparent 70%)" }} />
           <div className="pointer-events-none absolute -bottom-24 -right-24 h-64 w-64 rounded-full blur-3xl opacity-20" style={{ background: "radial-gradient(closest-side, var(--gold-start), transparent 70%)" }} />
           <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">What leaders are saying</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">What Executives Are Saying</h2>
             <div className="mt-10">
               <Testimonials items={testimonials} />
             </div>
@@ -396,13 +420,16 @@ export default function Home() {
             <div className="md:col-span-2">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">About the Author</h2>
               <p className="mt-4 text-sm md:text-base text-soft-gray max-w-prose">
-                April Armstrong is a trusted advisor to senior government and private sector officials. She is the founder and Chief Executive Officer of AHA Insight, a strategic consulting firm that supports top government officials and corporate executives leading transformational change.
+                April Armstrong is the author of The Day One Executive: A Guidebook to Stand Out in Your Career Starting Now, which elevated to #1 New Release and #1 Best Seller in six categories in its first week of release in 2023. Through her keynote talks, coaching, training, and advisory services, April inspires and equips professionals to custom-create a rewarding career. Her specialties—decision support, conflict resolution, consensus strategy, negotiation, and stakeholder engagement—are exactly what ambitious leaders need to gain entry to, and succeed, in the executive ranks.
               </p>
               <p className="mt-4 text-sm md:text-base text-soft-gray max-w-prose">
-                April has worked extensively with senior executives from the White House, nearly every department and agency of the Executive Branch—including the U.S. Intelligence Community, and numerous private sector corporations. Her career focus has helping often divergent stakeholders achieve complex deals valued in the billions of dollars and strike enduring partnerships to see those deals through and deliver results that last.
+                In her role as CEO of AHA Insight, April is a trusted "go-to" resource who helps executives turn pressure into performance, conflict into consensus, and ideas into legacy. She has served as facilitator and advisory to dozens of senior officials and C-suite executives looking to keep high-stakes projects from running off the rails, helping them attain actionable and enduring agreements in sensitive and complex multiparty negotiations. Among her key wins: Designing the U.S. Intelligence Community's tech roadmap that secured unanimous buy in from 18 IC elements; leading analysis to improve and generate enduring top official agreements around national disaster response strategy; and helping to accelerate adoption of lifesaving transportation technology across the country. In her private coaching practice, April has helped dozens of leaders land the job, ace the promotion, and pull off life-changing career pivots.
               </p>
               <p className="mt-4 text-sm md:text-base text-soft-gray max-w-prose">
-                Prior to forming her own company, April rose through the ranks to become one of the youngest—and first female—executives at the nation&apos;s largest employee-owned research and engineering company, which subsequently became a Fortune 500 company. April earned a Bachelor of Arts degree in communications and French from James Madison University; and a Master of Science degree in management information systems from The George Washington University in Washington, D.C. She has extensive training in negotiation and mediation in the United States and in Europe, and is a certified executive and career coach.
+                Prior to forming AHA Insight, April rose through the ranks to become one of the youngest and first female executives at the nation's largest employee owned research and engineering firm, which went public and later split into two Fortune 500 companies. She holds a Master of Science degree in management information systems from The George Washington University in Washington, D.C., and Bachelor of Arts degrees in communications and French from James Madison University, in Harrisonburg, VA. April has extensive training in negotiation in the United States and in Europe, is an American Arbitration Association-trained mediator and licensed trainer with the Protocol School of Washington. She is an ICF-certified executive and career coach.
+              </p>
+              <p className="mt-4 text-sm md:text-base text-soft-gray max-w-prose">
+                She regularly volunteers her time to help students nationwide bridge the gap between campus and career, and has served on several university boards, including as President of James Madison University's College of Arts and Letters Advisory Board. Her leadership tips have been featured by Forbes.com, Training Industry Magazine, and on ABC, CBS, NBC, and FOX affiliates across the country.
               </p>
             </div>
           </div>
@@ -443,7 +470,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Executive Coaching</h3>
-                  <p className="text-sm text-soft-gray">One-on-one leadership development for senior executives and emerging leaders.</p>
+                  <p className="text-sm text-soft-gray">One-on-one and team coaching for senior executives and rising/new executives.</p>
                 </div>
 
                 <div className="service-card group relative bg-white/[.02] border border-white/10 rounded-xl p-6 hover:bg-white/[.04] hover:border-white/20 transition-all duration-300">
@@ -468,7 +495,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Keynote Talks</h3>
-                  <p className="text-sm text-soft-gray">Inspiring presentations that transform audiences and drive organizational change.</p>
+                  <p className="text-sm text-soft-gray">Inspiring presentations that uplift audiences and transform possibilities.</p>
                 </div>
 
                 <div className="service-card group relative bg-white/[.02] border border-white/10 rounded-xl p-6 hover:bg-white/[.04] hover:border-white/20 transition-all duration-300">
@@ -478,7 +505,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">Strategic Advisory</h3>
-                  <p className="text-sm text-soft-gray">High-level consulting for complex organizational challenges and transformation.</p>
+                  <p className="text-sm text-soft-gray">High-level consulting for complex change, consensus strategy, and organizational transformation.</p>
                 </div>
               </div>
               
@@ -576,8 +603,8 @@ export default function Home() {
           
           {/* Header - Constrained */}
           <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-24">
-            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center">Organizations impacted</h2>
-            <p className="mt-3 text-sm text-soft-gray max-w-prose mx-auto text-center">Trusted by leaders across government and industry to deliver transformational results.</p>
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-center">Organizations Impacted</h2>
+            <p className="mt-3 text-sm text-soft-gray max-w-prose mx-auto text-center">Trusted by leaders across government, industry, and academia to deliver transformational results.</p>
           </div>
 
           {/* Government Institutions - Card Layout */}
@@ -589,55 +616,37 @@ export default function Home() {
                   src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Seal_of_the_Superior_Court_of_California%2C_County_of_Los_Angeles.png", 
                   alt: "Superior Court of California, County of Los Angeles",
                   name: "Superior Court of California",
-                  impact: "Led executive leadership development for judicial administrators, enhancing court system efficiency and public service delivery."
+                  impact: "Executive coaching workshop for judges and administrators, to enhance resilience; strategic advisory to help streamline judicial caseload."
                 },
                 { 
                   src: "https://cdn.freebiesupply.com/logos/large/2x/department-of-commerce-logo-png-transparent.png", 
                   alt: "U.S. Department of Commerce",
                   name: "U.S. Department of Commerce",
-                  impact: "Facilitated strategic partnerships and complex deal negotiations valued in the billions, driving economic growth initiatives."
-                },
-                { 
-                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png", 
-                  alt: "NASA",
-                  name: "NASA",
-                  impact: "Supported leadership transitions and organizational transformation during critical mission phases and technological advancement periods."
-                },
-                { 
-                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Seal_of_the_U.S._National_Security_Agency.svg/2048px-Seal_of_the_U.S._National_Security_Agency.svg.png", 
-                  alt: "U.S. National Security Agency",
-                  name: "U.S. National Security Agency",
-                  impact: "Provided executive coaching and strategic advisory services to senior intelligence officials leading high-stakes operations."
-                },
-                { 
-                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Seal_of_the_United_States_Department_of_Defense.svg/1200px-Seal_of_the_United_States_Department_of_Defense.svg.png", 
-                  alt: "U.S. Department of Defense",
-                  name: "U.S. Department of Defense",
-                  impact: "Guided military leaders through complex organizational changes and strategic planning initiatives during critical defense modernization efforts."
+                  impact: "Consensus-based decision support resulting commitment from 13 bureaus on new enterprise IT system to streamline administration annually of billions of dollars of grants."
                 },
                 { 
                   src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/US-WhiteHouse-Logo.svg/2560px-US-WhiteHouse-Logo.svg.png", 
                   alt: "The White House",
                   name: "The White House",
-                  impact: "Advised senior officials on executive leadership strategies and stakeholder management for high-priority policy initiatives."
-                },
-                { 
-                  src: "https://upload.wikimedia.org/wikipedia/commons/4/4a/United_States_Department_of_Transportation_seal.svg", 
-                  alt: "U.S. Department of Transportation",
-                  name: "U.S. Department of Transportation",
-                  impact: "Supported infrastructure investment strategies and public-private partnerships that enhanced transportation systems nationwide."
-                },
-                { 
-                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Seal_of_the_Central_Intelligence_Agency.svg/2048px-Seal_of_the_Central_Intelligence_Agency.svg.png", 
-                  alt: "Central Intelligence Agency",
-                  name: "Central Intelligence Agency",
-                  impact: "Provided leadership development for intelligence officers and supported organizational transformation initiatives."
+                  impact: "Strategic advisory and training with top and senior government officials to improve coordinated national catastrophic disaster preparedness and response."
                 },
                 { 
                   src: "https://upload.wikimedia.org/wikipedia/commons/2/27/Seal_of_the_Office_of_the_Director_of_National_Intelligence.svg", 
                   alt: "Office of the Director of National Intelligence",
                   name: "Office of the Director of National Intelligence",
-                  impact: "Facilitated inter-agency coordination and strategic planning for national intelligence community initiatives."
+                  impact: "Executive coaching, leadership development workshops, and expert facilitation to support executives and teams leading transformational change."
+                },
+                { 
+                  src: "https://upload.wikimedia.org/wikipedia/commons/4/4a/United_States_Department_of_Transportation_seal.svg", 
+                  alt: "U.S. Department of Transportation",
+                  name: "U.S. Department of Transportation",
+                  impact: "Multiparty negotiation support to infrastructure investment strategies and public-private partnerships modernizing transportation systems nationwide."
+                },
+                { 
+                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Seal_of_the_United_States_Intelligence_Community.svg/256px-Seal_of_the_United_States_Intelligence_Community.svg.png", 
+                  alt: "U.S. Intelligence Community",
+                  name: "U.S. Intelligence Community",
+                  impact: "Strategic advisory with leadership development programs; executive facilitation of interagency high-stakes initiatives."
                 },
               ].map((org, i) => (
                 <div key={`${org.alt}-${i}`} className="org-impact-card group relative bg-white/[.02] border border-white/10 rounded-lg p-6 hover:bg-white/[.04] hover:border-white/20 transition-all duration-300">
@@ -671,6 +680,72 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Private Sector - Card Layout */}
+          <div className="relative mx-auto max-w-6xl px-6 mt-20">
+            <div className="text-center text-sm tracking-wide uppercase text-soft-gray mb-12">Private Sector</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { 
+                  src: "https://www.privacysecurityacademy.com/wp-content/uploads/2024/03/Booz-Allen-2.png", 
+                  alt: "Booz Allen Hamilton",
+                  name: "Booz Allen Hamilton",
+                  impact: "Strategic advisory and decision support to help shape strategy and educational frameworks for connected and autonomous transportation systems."
+                },
+                { 
+                  src: "https://hero-health.org/wp-content/uploads/2016/03/rwjf.png", 
+                  alt: "Robert Wood Johnson Foundation",
+                  name: "Robert Wood Johnson Foundation",
+                  impact: "Facilitation of the first national framework to treat early adolescent psychosis by academic researchers and federal, state, local, and tribal mental health providers."
+                },
+                { 
+                  src: "https://cdn.prod.website-files.com/63c140cca12dc30690fce304/66472bd9c80d9d237c557f2a_Leidos.svg", 
+                  alt: "Leidos",
+                  name: "Leidos",
+                  impact: "Strategic advisory and complex negotiation support to executives and teams leading high-stakes multisector initiatives valued in the hundreds of millions of dollars."
+                },
+                { 
+                  src: "https://upload.wikimedia.org/wikipedia/commons/5/57/CNA_Corporation_logo.png", 
+                  alt: "CNA Corporation",
+                  name: "CNA Corporation",
+                  impact: "Strategic planning and trusted advisory with client-facing high-stakes change initiatives."
+                },
+                { 
+                  src: "https://upload.wikimedia.org/wikipedia/en/thumb/8/80/National_Academy_of_Sciences_logo.svg/1200px-National_Academy_of_Sciences_logo.svg.png", 
+                  alt: "National Academy of Sciences",
+                  name: "National Academy of Sciences",
+                  impact: "Consensus-based decision support and strategic advisory to shape national scientific and engineering research priorities."
+                },
+                { 
+                  src: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Amtrak_logo_2.svg", 
+                  alt: "Amtrak",
+                  name: "Amtrak",
+                  impact: "Strategic advisory and leadership coaching to help executives build crisis leadership capacity."
+                },
+              ].map((org, i) => (
+                <div key={`${org.alt}-${i}`} className="org-impact-card group relative bg-white/[.02] border border-white/10 rounded-lg p-6 hover:bg-white/[.04] hover:border-white/20 transition-all duration-300">
+                  <div className="flex items-start gap-4">
+                    <div className="logo-container h-16 w-16 flex-shrink-0 relative">
+                      <Image
+                        src={org.src}
+                        alt={org.alt}
+                        fill
+                        className="object-contain grayscale opacity-60"
+                      />
+                    </div>
+                    <div className="org-content flex-1 min-w-0">
+                      <h3 className="text-base font-semibold text-foreground mb-2 group-hover:text-gold-gradient transition-colors duration-300">
+                        {org.name}
+                      </h3>
+                      <p className="text-sm text-soft-gray leading-relaxed">
+                        {org.impact}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Universities - Card Layout */}
           <div className="relative mx-auto max-w-6xl px-6 mt-20">
             <div className="text-center text-sm tracking-wide uppercase text-soft-gray mb-12">Academic Institutions</div>
@@ -680,31 +755,37 @@ export default function Home() {
                   src: "https://cdn.freebiesupply.com/logos/large/2x/georgia-state-university-logo-png-transparent.png", 
                   alt: "Georgia State University",
                   name: "Georgia State University",
-                  impact: "Delivered executive leadership programs for university administrators and faculty leaders, enhancing institutional effectiveness and student outcomes."
+                  impact: "Undergraduate business curriculum complement to accelerate readiness for success in the professional world (bulk order)."
                 },
                 { 
                   src: "https://identity.usc.edu/wp-content/uploads/2022/08/TheSeal.png", 
                   alt: "University of Southern California",
                   name: "University of Southern California",
-                  impact: "Conducted leadership development workshops for academic deans and department heads, fostering innovation in higher education administration."
+                  impact: "Guest lecturer/career development advisory to undergraduate engineering students (bulk order)."
                 },
                 { 
                   src: "https://brand.psu.edu/images/backgrounds/veritcal-1-mark_registered.png", 
                   alt: "Penn State University",
                   name: "Penn State University",
-                  impact: "Supported strategic planning initiatives and leadership transitions within the university's executive administration and research programs."
+                  impact: "Leadership development workshops for transportation engineering researchers (bulk order)."
                 },
                 { 
                   src: "https://d2jyir0m79gs60.cloudfront.net/college/logos/James_Madison_University.gif", 
                   alt: "James Madison University",
                   name: "James Madison University",
-                  impact: "Facilitated organizational development and change management for university leadership during major campus expansion and modernization efforts."
+                  impact: "Career bootcamp to help new graduates and seniors stand out in resumes, interviews, internships, and first jobs."
                 },
                 { 
                   src: "https://logos-world.net/wp-content/uploads/2022/02/Virginia-Tech-Logo-2006.png", 
                   alt: "Virginia Tech",
                   name: "Virginia Tech",
-                  impact: "Provided executive coaching and strategic advisory services to university administrators, supporting research excellence and academic innovation initiatives."
+                  impact: "Guest lectures, keynote talks, and faculty advisory to help students from any major successfully leap from campus to career."
+                },
+                { 
+                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/George_Mason_University_logo.svg/1024px-George_Mason_University_logo.svg.png", 
+                  alt: "George Mason University",
+                  name: "George Mason University",
+                  impact: "Career center speaker to help students stand out in resumes and interviews and make a smooth leap from campus to career success."
                 },
               ].map((org, i) => (
                 <div key={`${org.alt}-${i}`} className="org-impact-card group relative bg-white/[.02] border border-white/10 rounded-lg p-6 hover:bg-white/[.04] hover:border-white/20 transition-all duration-300">

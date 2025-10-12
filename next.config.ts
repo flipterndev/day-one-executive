@@ -115,6 +115,46 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "logos-world.net",
       },
+      {
+        protocol: "https",
+        hostname: "i.logos-download.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.prod.website-files.com",
+      },
+      {
+        protocol: "https",
+        hostname: "vectorseek.com",
+      },
+      {
+        protocol: "https",
+        hostname: "events.latimes.com",
+      },
+      {
+        protocol: "https",
+        hostname: "img.favpng.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.american.edu",
+      },
+      {
+        protocol: "https",
+        hostname: "www.privacysecurityacademy.com",
+      },
+      {
+        protocol: "https",
+        hostname: "hero-health.org",
+      },
+      {
+        protocol: "https",
+        hostname: "mbraining.it",
+      },
+      {
+        protocol: "https",
+        hostname: "centerforexecutivecoaching.com",
+      },
     ],
   },
 };

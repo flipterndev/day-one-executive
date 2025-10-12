@@ -14,8 +14,8 @@ export default function Testimonials({ items }: Props) {
       <figure className="relative rounded-lg md:rounded-xl border border-white/10 p-6 md:p-8 bg-white/[.02] md:bg-white/[.03] shadow-md hover:bg-white/[.04] md:hover:bg-white/[.04] transition-shadow hover:shadow-md">
         {featured.logo && (
           <div className="pointer-events-none absolute inset-0 z-0">
-            <div className="absolute -bottom-12 right-3 flex items-end justify-end opacity-10 md:opacity-20">
-              <span className="relative block h-32 w-64 md:h-40 md:w-80">
+            <div className="absolute -bottom-2 right-3 flex items-end justify-end opacity-10 md:opacity-20">
+              <span className="relative block h-16 w-32 md:h-20 md:w-40">
                 <Image src={featured.logo} alt="" fill className="object-contain" />
               </span>
             </div>

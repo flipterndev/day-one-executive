@@ -75,9 +75,9 @@ export default function MediaPage() {
       <main className="mx-auto max-w-6xl px-6 py-12">
         {/* Page Header */}
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gold-gradient">Hear It Firsthand</h1>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gold-gradient">In the Media</h1>
           <p className="mt-4 text-lg text-soft-gray max-w-3xl">
-            Conversations and appearances that bring the Day One Executive principles to life. 
+            Conversations and appearances with author April Armstrong that bring The Day One Executive principles to life. 
             Explore videos, podcasts, and articles featuring April Armstrong&apos;s insights on leadership and executive success.
           </p>
         </div>

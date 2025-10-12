@@ -47,7 +47,7 @@ const services = [
     color: "from-purple-400/20 to-purple-600/20"
   },
   {
-    title: "Team Coaching",
+    title: "Strategic Advisory",
     description: "Group coaching sessions to build high-performing teams and collaborative leadership.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-400">
@@ -112,7 +112,7 @@ export default function OrganizationsModal({ isOpen, onClose }: OrganizationsMod
                 const isExecutiveCoaching = service.title === "Executive Coaching";
                 const isTrainingWorkshops = service.title === "Training/Workshops";
                 const isKeynoteTalks = service.title === "Keynote Talks";
-                const isTeamCoaching = service.title === "Team Coaching";
+                const isTeamCoaching = service.title === "Strategic Advisory";
                 
                 if (isExecutiveCoaching) {
                   return (

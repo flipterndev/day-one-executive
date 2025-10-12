@@ -13,7 +13,7 @@ const LINKS = {
   kindle: "https://www.amazon.com/Day-One-Executive-Guidebook-Starting-ebook/dp/B0BYW6DVTQ/ref=tmm_kin_swatch_0",
   audiobook: "https://www.amazon.com/Day-One-Executive-Guidebook-Starting/dp/B0DMQ455Z5/ref=tmm_aud_swatch_0",
   paperback: "https://www.amazon.com/Day-One-Executive-Guidebook-Starting/dp/B0C9G4MZP1/ref=tmm_pap_swatch_0",
-  hardcover: "https://www.amazon.com/Day-One-Executive-Guidebook-Starting/dp/B0CBZF6VQR/ref=tmm_hrd_swatch_0",
+  hardcover: "https://www.barnesandnoble.com/w/the-day-one-executive-april-h-armstrong/1143252616",
 };
 
 export default function PreorderButton({ variant = "hero", className = "" }: Props) {
@@ -102,14 +102,24 @@ export default function PreorderButton({ variant = "hero", className = "" }: Pro
         </div>
 
         <div className="mt-6 flex items-center justify-between">
-          <span className="relative inline-block h-6 w-[110px]">
-            <Image
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
-              alt="Amazon logo"
-              fill
-              className="object-contain"
-            />
-          </span>
+          <div className="flex items-center gap-1">
+            <span className="relative inline-block h-6 w-[110px]">
+              <Image
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
+                alt="Amazon logo"
+                fill
+                className="object-contain"
+              />
+            </span>
+            <span className="relative inline-block h-6 w-[110px]">
+              <Image
+                src="https://vectorseek.com/wp-content/uploads/2023/09/Barnes-Noble-Logo-Vector.svg-1-1.png"
+                alt="Barnes & Noble logo"
+                fill
+                className="object-contain"
+              />
+            </span>
+          </div>
           <button
             type="button"
             onClick={() => setOpen(false)}

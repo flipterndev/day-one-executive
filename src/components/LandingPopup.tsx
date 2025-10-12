@@ -71,11 +71,11 @@ export default function LandingPopup({ isOpen, onClose }: LandingPopupProps) {
           {/* Description */}
           <div className="space-y-3 md:space-y-4 text-sm md:text-base lg:text-lg text-soft-gray leading-relaxed mb-6 md:mb-8">
             <p>
-              Ready to take your leadership to the next level? April Armstrong offers exclusive 
+              Ready to take your leadership to the next level? Author April Armstrong offers exclusive 
               <span className="text-gold-gradient font-semibold"> executive coaching</span>, 
-              <span className="text-gold-gradient font-semibold"> training workshops</span>, and 
+              <span className="text-gold-gradient font-semibold"> training and workshops</span>, and 
               <span className="text-gold-gradient font-semibold"> keynote talks</span> 
-              designed to accelerate your success.
+               designed to accelerate your success.
             </p>
             <p className="text-xs md:text-sm lg:text-base">
               From Fortune 500 companies to government agencies, leaders trust April&apos;s proven 
