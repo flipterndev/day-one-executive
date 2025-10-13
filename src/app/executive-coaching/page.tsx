@@ -88,7 +88,7 @@ export default function ExecutiveCoaching() {
           </div>
           
           {/* Services Navigation */}
-          <nav className="flex flex-wrap items-center gap-2">
+          <nav className="flex flex-wrap items-center justify-center gap-2">
             <Link href="/executive-coaching" className="text-xs px-3 py-1.5 rounded-full border border-gold-gradient bg-gold-gradient/10 text-gold-gradient font-medium hover:bg-gold-gradient/20 transition-all duration-300">
               Executive Coaching
             </Link>

@@ -88,7 +88,7 @@ export default function TrainingWorkshops() {
           </div>
           
           {/* Services Navigation */}
-          <nav className="flex flex-wrap items-center gap-2">
+          <nav className="flex flex-wrap items-center justify-center gap-2">
             <Link href="/executive-coaching" className="text-xs px-3 py-1.5 rounded-full border border-white/10 bg-white/[.03] text-soft-gray hover:border-gold-gradient/50 hover:text-gold-gradient hover:bg-white/[.08] transition-all duration-300">
               Executive Coaching
             </Link>
